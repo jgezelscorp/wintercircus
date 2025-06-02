@@ -1,0 +1,6 @@
+semantic-kernel
+python-dotenv
+httpx
+fastapi
+uvicorn
+mcp
