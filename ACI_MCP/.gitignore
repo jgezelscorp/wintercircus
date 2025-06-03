@@ -1,3 +1,5 @@
+# Ignore local deployment environment file
+.env.deploy.ps1
 # Python-generated files
 __pycache__/
 *.py[oc]

@@ -50,12 +50,8 @@ try {
 # Write-Host "Setting Azure subscription to: $subscriptionId"
 # az account set --subscription $subscriptionId
 
-# Deployment Variables
-$RG="RG_ACI_MCP_JUNE12"
-$LOCATION="swedencentral"
-$APIKEYS="3434992003904833"
-$CONTAINER_APP_NAME="weather-mcp"
-$ENVIRONMENT_NAME="mcp"
+# Load deployment environment variables
+. "$PSScriptRoot/.env.deploy.ps1"
 
 # Check if resource group exists, create if it doesn't
 Write-Host "Checking if resource group $RG exists..."
