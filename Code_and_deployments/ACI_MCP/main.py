@@ -28,6 +28,7 @@ Author: Generated for Azure Container Apps MCP Sample
 from fastapi import FastAPI, Request, Depends
 from mcp.server.sse import SseServerTransport  # Server-Sent Events transport for MCP
 from starlette.routing import Mount
+from fastapi.middleware.cors import CORSMiddleware  # Import CORSMiddleware
 from weather import mcp  # Import the MCP server instance from weather module
 from api_key_auth import ensure_valid_api_key  # Custom API key authentication
 import uvicorn  # ASGI server for running the FastAPI application
@@ -36,7 +37,13 @@ import uvicorn  # ASGI server for running the FastAPI application
 # - Disable auto-generated documentation endpoints for security
 # - Apply API key authentication to all routes by default
 app = FastAPI(docs_url=None, redoc_url=None, dependencies=[Depends(ensure_valid_api_key)])
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Disables CORS for all origins by default
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 # Initialize Server-Sent Events transport for MCP communication
 # This handles the bidirectional communication between MCP clients and the server
 sse = SseServerTransport("/messages/")

@@ -1,0 +1,4 @@
+# Ignore user secrets and sensitive config
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
