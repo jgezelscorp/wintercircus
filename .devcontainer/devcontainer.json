@@ -1,6 +1,6 @@
 {
   "name": "Semantic Kernel Workshop",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+  "dockerFile": "Dockerfile",
 
   "features": {
     // uv as a Feature layer, so it’s cached instead of curl-installed each time
