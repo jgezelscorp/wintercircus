@@ -1,7 +1,0 @@
-﻿# Wintercircus hack 12/06
-# =======================
-
-/!\ WIP /!\
-
-1. Make sure that you create an .ENV file in both SK-Agent & Weahter-React-App
- 
