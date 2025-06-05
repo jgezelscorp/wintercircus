@@ -20,5 +20,5 @@
 <span style="color: red; font-size: 20px;">❗</span>
 You can also run it via CodeSpaces
 
-![](/June_12_Demo/images/codespaces.png)
+![](/images/codespaces.png)
 

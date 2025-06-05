@@ -21,6 +21,8 @@ their Agentic AI journey.
 
 ## Introduction
 
+0. [First things first!](/Module0%20[Pre-reqs]/readme.md)
+
 The hack is build around 3 modules:
 
 1. [Module1 : Prepare AI Foundry & Setup NIM](/Module1%20[Prep%20and%20NIM]/readme.md)
