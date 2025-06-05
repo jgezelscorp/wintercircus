@@ -21,6 +21,8 @@ their Agentic AI journey.
 
 ## Introduction
 
+Before we start, make sure you're environment is ready so:
+
 0. [First things first!](/Module0%20[Pre-reqs]/readme.md)
 
 The hack is build around 3 modules:
