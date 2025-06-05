@@ -1,4 +1,4 @@
-# Semantic Kernel Workshop
+# Module 2: Semantic Kernel Workshop
 
 A hands-on workshop exploring Microsoft's Semantic Kernel framework for building intelligent AI applications. This workshop provides practical experience with real-world AI application patterns using Python and Azure OpenAI.
 
