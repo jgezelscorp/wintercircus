@@ -26,7 +26,7 @@ Select "No" when asked to keep being signed in
 
 Once logged in, type "AI Foundry" in the search bar, select it and create a resource
 
-![](./../images/3_createFoundry.png)
+![](./../images/3_CreateFoundry.png)
 
 * Create a Resource Group
 * Give the Foundry Resource a name
@@ -37,11 +37,11 @@ Once logged in, type "AI Foundry" in the search bar, select it and create a reso
 Leave all the reset as-is. Remember that you could use
 private endpoints and other features to protect your resources which you typicaly would do in a production environment.
 
-![](./../images/4_createFoundry.png)
+![](./../images/4_CreateFoundry.png)
 
 Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI Foundry Portal***
 
-![](./../images/5_gotofoundry.png)
+![](./../images/5_GotoFoundry.png)
 
 
 ## AI Foundry
@@ -49,7 +49,7 @@ Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI F
 Once you are in foundry, make sure you are in the project.
 In there, we'll have to note down some information
 
-![](./../images/6_foundry.png)
+![](./../images/6_Foundry.png)
 
 In the overview tab, write down the following:
 1. Copy the ***API Key***
@@ -60,18 +60,18 @@ Next, let's deploy our LLM. Remember, we'll be using Model-Router in our setup s
 1. go to ***Models & Endpoints***
 2. Click the ***Deploy base model*** 
 
-![](./../images/7_foundry.png)
+![](./../images/7_Foundry.png)
 
 3. look for ***Model-Router***
 4. Click ***Confirm***
 
-![](./../images/8_foundry.png)
+![](./../images/8_Foundry.png)
 
 You'll notice that for ***Model-Router***, there is currently only a ***Global Standard*** deployment type meaning the Microsoft will choose where inferencing is happening. 
 
 This could be outside of Europe so be aware. For our hack, this doesn't really matter and as a result we get an enormous number of ***TPM*** & ***RPM***
 
-![](./../images/9_foundry.png)
+![](./../images/9_Foundry.png)
 
 <hr style="border: 2px solid #ccc; margin: 30px 0;">
 
