@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SK-Foundry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbd1403e4e16ef6410922884f97c58c58b1b37b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+041477560eb1f9e8b6dca295cedadaf928f7fb28")]
 [assembly: System.Reflection.AssemblyProductAttribute("SK-Foundry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SK-Foundry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
