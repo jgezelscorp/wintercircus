@@ -8,7 +8,7 @@
 
 <hr style="border: 2px solid #ccc; margin: 30px 0;">
 
-# 🎉 Welcome to the AI Agentic Hackathon at the WinterCircus! 🎉
+# 🎉 Welcome to the AI Agentic Hackathon at WinterCircus! 🎉
 
 We’re thrilled to have you join us for a full day of innovation, collaboration, and hands-on hacking at the intersection of AI and agentic systems. This event is proudly co-hosted by **NVIDIA**, **Delaware**, and our team — bringing together cutting-edge technology and deep expertise to help you build the next generation of intelligent solutions.
 
