@@ -23,7 +23,7 @@ their Agentic AI journey.
 
 The hack is build around 3 modules:
 
-1. [Module1 : Prepare AI Foundry & Setup NIM](/June_12_Demo/Module1%20[Prep%20and%20NIM])
+1. [Module1 : Prepare AI Foundry & Setup NIM](/June_12_Demo//Module1%20[Prep%20and%20NIM])
    <br>
    <span style="color: green;">✓</span> Configure AI Foundry
    <br>
@@ -34,7 +34,7 @@ The hack is build around 3 modules:
    <span style="color: green;">✓</span> Expose Llama3 Endpoint
    <br>
    <br>
-2. [Module2 : Semantic Kernel Labs](/June_12_Demo//Module2%20[Semantic%20Kernel])
+2. [Module2 : Semantic Kernel Labs](/June_12_Demo/Module2%20[Semantic%20Kernel]/readme.md)
    <br>
    <span style="color: green;">✓</span> Intro to Semantic Kernel
    <br>
