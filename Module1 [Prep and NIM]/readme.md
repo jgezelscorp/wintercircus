@@ -16,4 +16,65 @@ For Embedding, we'll deploy the ADA-2 model.
 
 ## Log-in
 
-![](images/1_login.png)
+Use the account that your coach has given you
+
+![](./../images/1_login.png)
+
+Select "No" when asked to keep being signed in
+
+![](./../images/2_login.png)
+
+Once logged in, type "AI Foundry" in the search bar, select it and create a resource
+
+![](./../images/3_createFoundry.png)
+
+* Create a Resource Group
+* Give the Foundry Resource a name
+* Select ***Sweden Central*** as a region
+* Give your first project a name
+<br>
+
+Leave all the reset as-is. Remember that you could use
+private endpoints and other features to protect your resources which you typicaly would do in a production environment.
+
+![](./../images/4_createFoundry.png)
+
+Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI Foundry Portal***
+
+![](./../images/5_gotofoundry.png)
+
+
+## AI Foundry
+
+Once you are in foundry, make sure you are in the project.
+In there, we'll have to note down some information
+
+![](./../images/6_foundry.png)
+
+In the overview tab, write down the following:
+1. Copy the ***API Key***
+2. Click on ***Azure OpenAI***
+3. Copy the ***OpenAI endpoint***
+
+Next, let's deploy our LLM. Remember, we'll be using Model-Router in our setup so:
+1. go to ***Models & Endpoints***
+2. Click the ***Deploy base model*** 
+
+![](./../images/7_foundry.png)
+
+3. look for ***Model-Router***
+4. Click ***Confirm***
+
+![](./../images/8_foundry.png)
+
+You'll notice that for ***Model-Router***, there is currently only a ***Global Standard*** deployment type meaning the Microsoft will choose where inferencing is happening. 
+
+This could be outside of Europe so be aware. For our hack, this doesn't really matter and as a result we get an enormous number of ***TPM*** & ***RPM***
+
+![](./../images/9_foundry.png)
+
+<hr style="border: 2px solid #ccc; margin: 30px 0;">
+
+***Repeat this step for ADA-2 & any other model you want to deploy***
+
+<hr style="border: 2px solid #ccc; margin: 30px 0;">
