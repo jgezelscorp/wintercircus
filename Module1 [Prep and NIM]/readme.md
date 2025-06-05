@@ -51,12 +51,12 @@ In there, we'll have to note down some information
 
 ![](./../images/6_Foundry.png)
 
-In the overview tab, write down the following:
+In the overview tab, do the following:
 1. Copy the ***API Key***
 2. Click on ***Azure OpenAI***
 3. Copy the ***OpenAI endpoint***
 
-Next, let's deploy our LLM. Remember, we'll be using Model-Router in our setup so:
+Next, let's deploy our LLM. Remember, we'll be using ***Model-Router*** in our setup so:
 1. go to ***Models & Endpoints***
 2. Click the ***Deploy base model*** 
 
@@ -67,9 +67,9 @@ Next, let's deploy our LLM. Remember, we'll be using Model-Router in our setup s
 
 ![](./../images/8_Foundry.png)
 
-You'll notice that for ***Model-Router***, there is currently only a ***Global Standard*** deployment type meaning the Microsoft will choose where inferencing is happening. 
+You'll notice that for ***Model-Router***, there is currently only a ***Global Standard*** deployment type meaning that Microsoft will choose where inferencing is happening. 
 
-This could be outside of Europe so be aware. For our hack, this doesn't really matter and as a result we get an enormous number of ***TPM*** & ***RPM***
+This could be outside of Europe so be aware. For our hack, this doesn't really matter and as a result we get a lot of ***TPM*** & ***RPM***
 
 ![](./../images/9_Foundry.png)
 
