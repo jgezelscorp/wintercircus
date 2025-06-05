@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "trfuIALZ4S0=",
+  "dgSpecHash": "mvY+0h7dlhI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\Code_and_deployments\\SK-Foundry\\SK-Foundry.csproj",
+  "projectFilePath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\June_12_Demo\\Module3 [Extra exercises]\\SK-Foundry\\SK-Foundry.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jangezels\\.nuget\\packages\\azure.ai.agents.persistent\\1.0.0\\azure.ai.agents.persistent.1.0.0.nupkg.sha512",
     "C:\\Users\\jangezels\\.nuget\\packages\\azure.ai.inference\\1.0.0-beta.4\\azure.ai.inference.1.0.0-beta.4.nupkg.sha512",

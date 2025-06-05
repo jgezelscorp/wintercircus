@@ -2175,11 +2175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\Code_and_deployments\\SK-Foundry\\SK-Foundry.csproj",
+      "projectUniqueName": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\June_12_Demo\\Module3 [Extra exercises]\\SK-Foundry\\SK-Foundry.csproj",
       "projectName": "SK-Foundry",
-      "projectPath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\Code_and_deployments\\SK-Foundry\\SK-Foundry.csproj",
+      "projectPath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\June_12_Demo\\Module3 [Extra exercises]\\SK-Foundry\\SK-Foundry.csproj",
       "packagesPath": "C:\\Users\\jangezels\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\Code_and_deployments\\SK-Foundry\\obj\\",
+      "outputPath": "C:\\Users\\jangezels\\OneDrive - Microsoft\\temp\\Hack_12_06_2025\\Excercises\\June_12_Demo\\Module3 [Extra exercises]\\SK-Foundry\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
