@@ -3,7 +3,7 @@
 <div style="display: flex; align-items: center; gap: 20px; margin: 20px 0;">
   <img src="images/ms_logo.png" alt="Microsoft Logo" height="60" />
   <img src="images/nvidia_logo.png" alt="NVIDIA Logo" height="60" />
-  <img src="images/Delaware_Logo.png" alt="Delaware Logo" height="60" />
+  <img src="images/devoteam_logo.png" alt="Devoteam Logo" height="60" />
 </div>
 
 <hr style="border: 2px solid #ccc; margin: 30px 0;">

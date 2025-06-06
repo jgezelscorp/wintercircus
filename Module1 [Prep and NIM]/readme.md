@@ -24,6 +24,8 @@ Select "No" when asked to keep being signed in
 
 ![](./../images/2_login.png)
 
+## Create Foundry Project
+
 Once logged in, type "AI Foundry" in the search bar, select it and create a resource
 
 ![](./../images/3_CreateFoundry.png)
@@ -39,12 +41,16 @@ private endpoints and other features to protect your resources which you typical
 
 ![](./../images/4_CreateFoundry.png)
 
-Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI Foundry Portal***
+Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI Foundry Portal*** or open an a browser and go to ***https://ai.azure.com***
 
 ![](./../images/5_GotoFoundry.png)
 
+💡We are using a non-hub project type which means you will not see *all* models.💡
 
-## AI Foundry
+![](./../images/10_Foundry.png)
+
+
+## Configure AI Foundry Project
 
 Once you are in foundry, make sure you are in the project.
 In there, we'll have to note down some information
@@ -76,5 +82,6 @@ This could be outside of Europe so be aware. For our hack, this doesn't really m
 <hr style="border: 2px solid #ccc; margin: 30px 0;">
 
 ***Repeat this step for ADA-2 & any other model you want to deploy***
+
 
 <hr style="border: 2px solid #ccc; margin: 30px 0;">
