@@ -132,7 +132,7 @@ Now, go back to https://build.nvidia.com and click on ***Get API Key***
 
 Next, click on Generate API Key.
         ![](./../images/8_nvidia.png)
-<br>***Once the key is generated, click on Copy Key and save it in a notepad or text editor for later use in this lab***
+<br>***Once the key is generated, click on Copy Key and save it in a notepad or text editor for later use in this lab. You can always find it back at : https://org.ngc.nvidia.com/setup/api-keys***
 
 
 ## Task 2: Prepare Your Environment
