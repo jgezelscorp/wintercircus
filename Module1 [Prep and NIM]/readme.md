@@ -131,8 +131,9 @@ Now, go back to https://build.nvidia.com and click on ***Get API Key***
         ![](./../images/7_nvidia.png)
 
 Next, click on Generate API Key.
-        ![](./../images/8_nvidia.png)
-<br>***Once the key is generated, click on Copy Key and save it in a notepad or text editor for later use in this lab. You can always find it back at : https://org.ngc.nvidia.com/setup/api-keys***
+<br><br>&emsp; ![](./../images/8_nvidia.png)
+
+***Once the key is generated, click on Copy Key and save it in a notepad or text editor for later use in this lab. You can always find it back at : https://org.ngc.nvidia.com/setup/api-keys***
 
 
 ## Task 2: Prepare Your Environment
@@ -193,8 +194,8 @@ The key to creating Azure Kubernetes Service (AKS) for NIM is to create proper G
 
 ### 3.1 Set the correct Azure Sub
 
-```
 It should be ok but set the correct Azure Subscription
+```
 az account set --subscription <subscription name>
 ```
 
@@ -246,7 +247,7 @@ az aks create -g <resource group name> -n <aks name> --location <location has de
 ### 3.5 Create GPU nodepool
 
 ```
-az aks nodepool add --resource-group <resource group name> --cluster-name <aks name> --name <nodepool name> --node-count 1 --skip-gpu-driver-install --node-vm-size <Desire VM type> --node-osdisk-size 2048 --max-pods 110
+az aks nodepool add --resource-group <resource group name> --cluster-name <aks name> --name <nodepool name> --node-count 1 --skip-gpu-driver-install --node-vm-size standard_nc24ads_a100_v4 --node-osdisk-size 2048 --max-pods 110
 ```
 
 ### 3.6 Connect to AKS
@@ -276,7 +277,7 @@ export NGC_API_KEY="key from ngc"
 
 In case the key doesn't work, you could try the following key:
 ```
-NThncmgwMGEzY2YydXVrdHYzaXFpZjd1Mmg6Mzc2ZDMyMTUtNTVhYi00YzQ4LWFkOTctOTQyYjQ0NmIwNDY
+Check the lab guidance or ask the coaches 
 ```
 ### 4.2 Clone Helm repo 
 
@@ -340,7 +341,7 @@ Since this example assumes you aren't using an ingress controller, simply port-f
 kubectl -n nim port-forward service/my-nim-nim-llm 8000:8000
 ```
 
-Test yourself with Curl
+Use curl to test, below is the response you should get back
 
 ```
 #!/bin/bash curl -X 'POST' \ 'http://localhost:8000/v1/chat/completions' \ -H 'accept: application/json' \ -H 'Content-Type: application/json' \ -d '{ "messages": [ { "content": "You are a polite and respectful chatbot helping people plan a vacation.", "role": "system" }, { "content": "What should I do for a 4-day vacation in Spain?", "role": "user" } ], "model": "meta/llama-3.1-8b-instruct", "max_tokens": 16, "top_p": 1, "n": 1, "stream": false, "stop": "\n", "frequency_penalty": 0.0 }'
