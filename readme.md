@@ -10,7 +10,7 @@
 
 # 🎉 Welcome to the AI Agentic Hackathon at WinterCircus! 🎉
 
-We’re thrilled to have you join us for a full day of innovation, collaboration, and hands-on hacking at the intersection of AI and agentic systems. This event is proudly co-hosted by **NVIDIA**, **Delaware**, and our team — bringing together cutting-edge technology and deep expertise to help you build the next generation of intelligent solutions.
+We’re thrilled to have you join us for a full day of innovation, collaboration, and hands-on hacking at the intersection of AI and agentic systems. This event is proudly co-hosted by **NVIDIA**, **Devoteam**, and our team — bringing together cutting-edge technology and deep expertise to help you build the next generation of intelligent solutions.
 
 Throughout the day, you’ll also hear from inspiring speakers from **GitHub** and the **Semantic Kernel** team, who will share insights, lead sessions, and be on hand to support while you hack.
 
