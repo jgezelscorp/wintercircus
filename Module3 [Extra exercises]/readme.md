@@ -4,9 +4,10 @@ This guide will help you set up all the necessary environment variables for the 
 
 ## 📁 Projects Overview
 
-1. **SK-Agent** - Semantic Kernel agent that uses Azure OpenAI and MCP server
-2. **weather-react-app** - React web application with Azure AD auth and weather features  
-3. **ACI_MCP** - Azure Container Apps MCP server for weather data
+1. **ACI_MCP** - Azure Container Apps MCP server for weather data
+2. **SK-Agent** - Semantic Kernel agent that uses Azure OpenAI and the above MCP server
+3. **weather-react-app** - React web application with Azure AD auth and weather features  
+
 
 ## 🚀 Quick Setup
 
@@ -30,13 +31,11 @@ Copy-Item "ACI_MCP\.env.template" "ACI_MCP\.env"
 You'll need these Azure resources:
 
 #### 🧠 Azure OpenAI Service
-1. Create an Azure OpenAI resource in Azure Portal
-2. Deploy a model (e.g., `gpt-4` or `gpt-35-turbo`)
-3. Get your endpoint URL and API key from the resource
+* You can reuse the resources you have deployed earlier today
 
 #### 🔐 Azure Active Directory App Registration (for React app)
-1. Go to Azure Portal > Azure Active Directory > App registrations
-2. Create a new registration
+1. Go to Azure Portal > Entra ID > App registrations
+2. Create a new registration (Single Tenant)
 3. Set redirect URI to `http://localhost:3000` (for development)
 4. Copy the Application (client) ID and Directory (tenant) ID
 
@@ -44,21 +43,6 @@ You'll need these Azure resources:
 1. Deploy the ACI_MCP project to Azure Container Apps
 2. Get the URL of your deployed container app
 3. Set up API keys for authentication
-
-## 📝 Environment Variables Reference
-
-### 🎯 Critical Variables (Must Configure)
-
-| Variable | Where Used | Description |
-|----------|------------|-------------|
-| `AZURE_OPENAI_ENDPOINT` | All projects | Your Azure OpenAI endpoint URL |
-| `AZURE_OPENAI_API_KEY` | All projects | Your Azure OpenAI API key |
-| `AZURE_OPENAI_DEPLOYMENT_NAME` | All projects | Model deployment name (e.g., `gpt-4`) |
-| `MCP_SERVER_URL` | SK-Agent, React app | URL to weather MCP server |
-| `MCP_API_KEY` | SK-Agent, React app | API key for MCP server |
-| `REACT_APP_CLIENT_ID` | React app | Azure AD application ID |
-| `REACT_APP_TENANT_ID` | React app | Azure AD tenant ID |
-| `API_KEYS` | ACI_MCP | Comma-separated API keys |
 
 ### 🛠️ Configuration Steps
 
@@ -108,14 +92,6 @@ cd ACI_MCP
 python main.py
 ```
 
-## 🔒 Security Best Practices
-
-1. **Never commit .env files** - They're already in .gitignore
-2. **Use strong API keys** - Generate random, long keys
-3. **Rotate keys regularly** - Especially for production
-4. **Use Azure Key Vault** - For production deployments
-5. **Limit permissions** - Use least privilege principle
-
 ## 🚨 Troubleshooting
 
 ### Common Issues:
@@ -134,11 +110,13 @@ python main.py
 - Verify the MCP server URL is accessible
 - Check that API key matches what's configured on server
 - Test the URL in a browser (should return some response)
+- URL ends like ***/sse***
 
 #### React App Auth Issues
 - Verify Client ID and Tenant ID are correct
 - Check redirect URI matches your app registration
 - Ensure localhost:3000 is added as a redirect URI
+- Make sure to 'configure' CORS to allow all *  
 
 ## 📞 Getting Help
 
@@ -147,6 +125,7 @@ If you need help:
 2. Verify all environment variables are set correctly
 3. Test each component individually
 4. Check Azure portal for resource status
+5. Ask
 
 ---
 
