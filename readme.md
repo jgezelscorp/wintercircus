@@ -62,6 +62,6 @@ The hack is build around 3 modules:
    
 <br>
 <br>
-Remember, the experts are here to help you today so if you have a great idea and want to put it work, by al means, Go for it!!
+Remember, the experts are here to help you today so if you have a great idea and want to put it to work: Go for it!!
    
    
