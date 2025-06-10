@@ -23,11 +23,11 @@ their Agentic AI journey.
 
 Before we start, make sure you're environment is ready so:
 
-0. [First things first!](/Module0%20[Pre-reqs]/readme.md)
+0. [First things first!](./Module0%20[Pre-reqs]/readme.md)
 
 The hack is build around 3 modules:
 
-1. [Module1 : Prepare AI Foundry & Setup NIM](/Module1%20[Prep%20and%20NIM]/readme.md)
+1. [Module1 : Prepare AI Foundry & Setup NIM](./Module1%20[Prep%20and%20NIM]/readme.md)
    <br>
    <span style="color: green;">✓</span> Configure AI Foundry
    <br>
@@ -38,7 +38,7 @@ The hack is build around 3 modules:
    <span style="color: green;">✓</span> Expose Llama3 Endpoint
    <br>
    <br>
-2. [Module2 : Semantic Kernel Labs](Module2%20[Semantic%20Kernel]/readme.md)
+2. [Module2 : Semantic Kernel Labs](./Module2%20[Semantic%20Kernel]/readme.md)
    <br>
    <span style="color: green;">✓</span> Intro to Semantic Kernel
    <br>
@@ -49,7 +49,7 @@ The hack is build around 3 modules:
    <span style="color: green;">✓</span> Semantic Kernel Process-Framework
    <br>
    <br>
-3. [Module3 : Extra Excercises](/Module3%20[Extra%20exercises]/readme.md)
+3. [Module3 : Optional Excercises](./Module3%20[Extra%20exercises]/readme.md)
    <br>
    <span style="color: green;">✓</span> Deploy an MCP Server in an Azure Container Instance
    <br>
@@ -59,5 +59,9 @@ The hack is build around 3 modules:
    <br>
    <span style="color: green;">✓</span> Use AI Gateway (APIM) in front of MCP server(s) and use Authentication
    <br>
+   
+<br>
+<br>
+Remember, the experts are here to help you today so if you have a great idea and want to put it work, by al means, Go for it!!
    
    
