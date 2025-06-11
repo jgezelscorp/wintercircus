@@ -135,8 +135,86 @@ Next, click on Generate API Key.
 
 ***Once the key is generated, click on Copy Key and save it in a notepad or text editor for later use in this lab. You can always find it back at : https://org.ngc.nvidia.com/setup/api-keys***
 
+## Task 2 (Powershell): Prepare Your Environment
+### Install AKS Preview extension
+1. In the LabVM, in the Windows Search bar type Powershell (1) and select Windows PowerShell ISE (2). Right click on it, then Run as Administrator (3).
+   ![img.png](../images/img.png)
 
-## Task 2: Prepare Your Environment
+
+
+### Installing kubectl
+1. In the Terminal, run the following commands to download the latest version of kubectl:
+    ```powershell
+    # Fetch the latest stable version of kubectl
+    $version = (Invoke-RestMethod -Uri https://dl.k8s.io/release/stable.txt).Trim()
+    
+    # Download the kubectl executable
+    Invoke-WebRequest -Uri "https://dl.k8s.io/release/$version/bin/windows/amd64/kubectl.exe" -OutFile "kubectl.exe"
+    
+    # Download the SHA256 hash for verification
+    Invoke-WebRequest -Uri "https://dl.k8s.io/release/$version/bin/windows/amd64/kubectl.exe.sha256" -OutFile "kubectl.exe.sha256"
+     ```
+    ![img_1.png](../images/img_1.png)
+2. Run the following commands to verify that the downloaded file matches the expected SHA256 hash:
+    ```powershell
+    # Get the expected SHA256 hash from the downloaded hash file
+    $expectedHash = Get-Content -Path "kubectl.exe.sha256"
+    
+    # Calculate the actual SHA256 hash of the downloaded kubectl file
+    $actualHash = Get-FileHash -Path "kubectl.exe" -Algorithm SHA256 | Select-Object -ExpandProperty Hash
+    
+    # Check if the hash matches
+    if ($expectedHash -eq $actualHash) {
+       Write-Host "Verification succeeded"
+    } else {
+       Write-Host "Verification failed"
+    }
+    ```
+   ![img_2.png](../images/img_2.png)
+
+3. Create a directory for `kubectl`:
+   ```powershell
+   New-Item -ItemType Directory -Path "C:\Program Files\kubectl"
+   ```
+   ![img_6.png](../images/img_6.png)
+
+4. Move the downloaded kubectl.exe file to the newly created directory:
+   ```powershell
+    Move-Item -Path "kubectl.exe" -Destination "C:\Program Files\kubectl\kubectl.exe"
+   ```
+   
+5. Run the following command to add the kubectl directory to your system PATH:
+   ```powershell
+   [System.Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\kubectl", [System.EnvironmentVariableTarget]::Machine)
+   ```
+   ![img_3.png](../images/img_3.png)
+
+6. After updating the PATH variable, close the current PowerShell window and open a new one. This will allow the system to recognize the updated PATH.
+
+7. Once the session restarted, verify that kubectl has been installed correctly by running the following command. This command returns the installed kubectl version, confirming a successful installation.
+    ``` 
+    kubectl version --client
+    ```
+   ![img_5.png](../images/img_5.png)
+
+### Installing Helm
+1. Install Helm package manager
+
+   - It's a package manager for Kubernetes that we'll use to deploy NIM
+    ```
+    choco install kubernetes-helm -y
+    ```
+
+2. Verify that Helm has been installed correctly by running the following command. This command returns the installed Helm version, confirming a successful installation.
+    ```
+    helm version
+    ```
+   ![img_4.png](../images/img_4.png)
+
+
+
+
+## Task 2 (Bash): Prepare Your Environment
 
 ***Following is the detail instructions to install from a bash***
 
