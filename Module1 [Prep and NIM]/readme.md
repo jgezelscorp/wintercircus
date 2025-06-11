@@ -140,13 +140,7 @@ Next, click on Generate API Key.
 
 ***Following is the detail instructions to install from a bash***
 
-### 2.1 Install Azure CLI (if not installed)
-
-```
-winget install Microsoft.AzureCLI
-```
-
-### 2.2 Install AKS Preview extension
+### 2.1 Install AKS Preview extension
 
 ```
 az extension add --name aks-preview
@@ -155,7 +149,7 @@ az extension update --name aks-preview
 
 For more detail, Please reference this [link.](https://learn.microsoft.com/en-us/azure/aks/draft)
 
-### 2.3 Install kubectl
+### 2.2 Install kubectl
 
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -176,7 +170,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 kubectl version --client
 ```
 
-### 2.4 Install helm
+### 2.3 Install helm
 
 ```
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
