@@ -323,9 +323,9 @@ called **NGC_API_KEY**
 export NGC_API_KEY="key from ngc"
 ```
 
-In case the key doesn't work, you could try the following key:
+In case the key doesn't work, you could try the following key otherwise ask the coaches:
 ```
-Check the lab guidance or ask the coaches 
+NThncmgwMGEzY2YydXVrdHYzaXFpZjd1Mmg6Mzc2ZDMyMTUtNTVhYi00YzQ4LWFkOTctOTQyYjQ0NmIwNDY1 
 ```
 ### 4.2 Clone Helm repo 
 
