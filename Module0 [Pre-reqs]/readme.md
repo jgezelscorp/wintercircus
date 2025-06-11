@@ -11,8 +11,12 @@ If it is not the case, follow the steps below to install the necessary tools and
     ```
    If `winget` is not installed. Download VS Code manually and install it https://code.visualstudio.com/download
 
+2. Install the Azure Clin if not installed yet.
+    ```
+    Download via following link https://aka.ms/installazurecliwindowsx64
+    ```
 
-2. Open the project in VS Code (Repo URL: https://aka.ms/WintercircusAiHack)
+3. Open the project in VS Code (Repo URL: https://aka.ms/WintercircusAiHack)
 
     Here you have two options:
 
@@ -29,7 +33,7 @@ If it is not the case, follow the steps below to install the necessary tools and
        ![](./../images/codespaces.png)
 
     
-3. Install VSCODE Extensions (Open bash terminal in VSCODE, see additional tip)
+4. Install VSCODE Extensions (Open bash terminal in VSCODE, see additional tip)
 
     ```
     chmod +x install-vscode-and-extensions.sh

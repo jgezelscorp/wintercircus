@@ -112,9 +112,9 @@ Accessing the Azure Portal
 1. Login or Create Nvidia account  
     - Navigate to [https://build.nvidia.com/](https://build.nvidia.com/) and login using your personal email id. If not, ***create an account***  
     - Navigate to https://ngc.nvidia.com/signin account using your credentials to proceed.
-![](./../images/1_nvidia.png)
-![](./../images/2_nvidia.png)
-![](./../images/3_nvidia.png)
+
+    ![](./../images/1_nvidia.png)
+    ![](./../images/2_nvidia.png)
 
 2. Once your account is created or you've successfully logged in.
 
