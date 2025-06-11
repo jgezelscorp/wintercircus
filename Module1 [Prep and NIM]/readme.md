@@ -27,8 +27,6 @@ These models will be deployed behind an API Endpoint and the router will select 
 
 By using Model Router, we are able to achieve a 60% cost reduction while preserving almost the same accuracy as if we would only use GPT-4.1
 
-For Embedding, we'll deploy the ADA-2 model.
-
 ## Log-in
 
 Use the account that your coach has given you
