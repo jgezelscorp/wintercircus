@@ -140,10 +140,10 @@ Next, click on Generate API Key.
 
 ***Following is the detail instructions to install from a bash***
 
-### 2.1 Install Azure CLI
+### 2.1 Install Azure CLI (if not installed)
 
 ```
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+winget install Microsoft.AzureCLI
 ```
 
 ### 2.2 Install AKS Preview extension

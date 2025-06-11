@@ -5,6 +5,9 @@
 .env.test.local
 .env.production.local
 
+# MCP Configs
+.vscode/mcp.json
+
 # API Keys and secrets
 *.key
 *.pem

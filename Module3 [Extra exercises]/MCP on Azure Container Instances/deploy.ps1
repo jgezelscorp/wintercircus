@@ -1,5 +1,5 @@
 # Deploys the Azure Container App for the weather MCP
-# Run from root of the repository
+# Run from root of the excercise directory
 
 # Set error action preference to stop on errors
 $ErrorActionPreference = "Stop"
