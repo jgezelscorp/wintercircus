@@ -18,7 +18,7 @@ If it is not the case, follow the steps below to install the necessary tools and
 
     * **Clone** the repository locally on the Lab VM
        ```
-       git clone git@github.com:jgezelscorp/June_12_Demo.git
+       git clone <PLACEHOLDER_REPO_URL>
        ```
     * You can use ***codespaces***
        ```

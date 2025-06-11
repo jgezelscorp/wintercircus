@@ -49,11 +49,13 @@ Once deployed, go to your Resource (AI Foundry instance) and click ***Go To AI F
 
 ![](./../images/10_Foundry.png)
 
+### Additional Tip:
+![create_ai_foundry.gif](../images/create_ai_foundry.gif)
 
 ## 2. Configure the Azure AI Foundry Project
 
 Once you are in foundry, make sure you are in the project.
-Note down the following information as we'll need this to populate our ***.env file***
+Note down the following information as we'll need this to populate our ***.env file*** inside `Module2 [Semantic Kernel]` folder
 
 ![](./../images/6_Foundry.png)
 
@@ -61,6 +63,8 @@ In the overview tab, do the following:
 1. Copy the ***API Key***
 2. Click on ***Azure OpenAI***
 3. Copy the ***OpenAI endpoint***
+![set_env_file.gif](../images/set_env_file.gif)
+
 
 Next, let's deploy our LLM. Remember, we'll be using ***Model-Router*** in our setup so:
 1. go to ***Models & Endpoints***
@@ -237,6 +241,7 @@ Following is the example
 
 ***The region where you will be deploying is mentioned in the Guide in
 the lab environment or ask the coaches.***
+![identify_region_gpu.gif](../images/identify_region_gpu.gif)
 
 ### 3.4 Create AKS
 
