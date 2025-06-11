@@ -18,9 +18,9 @@ Some of the features it has:
 - Authentication handling
 - exposing your AI Foundry and Azure OpenAI models and API's
 
-![GA for GenAI Gateway](.\assets\genaigw.png)
+![GA for GenAI Gateway](./assets/genaigw.png)
 
-![MCP featues in APIM and APIC](.\assets\mcpexpo.png)
+![MCP featues in APIM and APIC](./assets/mcpexpo.png)
 
 ## Exercise
 ### Pre-requisite for this exercise
@@ -29,12 +29,12 @@ Create an Application Insights resource , follow the guide here if needed [Appli
 ### Create an API Management services instance capable of MCP
 
 **1.** Log in to https://portal.azure.com
-**2.** in the search bar type "API man", this will give you below results: ![API Services](.\assets\apim-search.png) Select **API Managment services**. This will open up the API Management services blade and page.
+**2.** in the search bar type "API man", this will give you below results: ![API Services](./assets/apim-search.png) Select **API Managment services**. This will open up the API Management services blade and page.
 **3.** Click "Create"
-</br>![Click Create](.\assets\apim-clickcreate.png)
+</br>![Click Create](./assets/apim-clickcreate.png)
 
 **4.** In the create screen fill out all the details **BUT** make sure that you select a **V1** SKU (take a Basic or Standard if you please). This is important for the remainder of the exercise
-![API Needed SKU's](.\assets\apim-createsku.png)
+![API Needed SKU's](./assets/apim-createsku.png)
     <details>
         <summary><strong>Note</strong></summary>
         <i>
@@ -43,7 +43,7 @@ Create an Application Insights resource , follow the guide here if needed [Appli
         </i>
     </details>
 For the rest of the *Basics* tab fill out as needed
-![Basics tab](.\assets\apim-wizard-03-basics-tab.png)
+![Basics tab](./assets/apim-wizard-03-basics-tab.png)
 
    - **Subscription**: Select your Azure subscription
    - **Resource Group**: Choose an existing resource group or create a new one
@@ -55,7 +55,7 @@ For the rest of the *Basics* tab fill out as needed
 Click **"Next"** to continue.
 
 **5.** In the *Monitor + secure* tab make sure you enable a log analytics workspace and enable "Log Analytics (Enhanced monitoring and insights into your APIs)" and "Application Insights" and select there the resources created during the pre-reqs creation (see prereqs and guide above).
-![Monitor tab](.\assets\apim-wizard-05-monitor-secure-tab.png)
+![Monitor tab](./assets/apim-wizard-05-monitor-secure-tab.png)
 
    - **Enable Log Analytics**: ✅ Check this option
    - **Log Analytics workspace**: Select the workspace created in prerequisites
@@ -65,13 +65,13 @@ Click **"Next"** to continue.
  Click **"Next"** to continue.
 
 **6.** On the "Virtual Network" tab just leave all the defaults and click **"Next"** to continue.
-![Network tab](.\assets\apim-wizard-06-networking-tab.png)
+![Network tab](./assets/apim-wizard-06-networking-tab.png)
 
 **7.** Enable the <i>Managed Identity</i> check box and now click **"Review + Create"** to validate the deployment.
-![Identity tab](.\assets\apim-wizard-07-identity-tab.png)
+![Identity tab](./assets/apim-wizard-07-identity-tab.png)
 
 **8.** If all is filled out correctly and complete the **"Create"** button will be enabled (after ARM validation), if not you will see the screen below, then you need to recheck everything to make sure all is filledout correctly.  
-![Validation tab](.\assets\apim-wizard-09-review-create.png)
+![Validation tab](./assets/apim-wizard-09-review-create.png)
 
 If the **"Create"** button is enabled (blue) then click it and the deployment will start. 
 <details>
@@ -83,15 +83,15 @@ If the **"Create"** button is enabled (blue) then click it and the deployment wi
 
 ### Enabling the MCP capabilities on APIM
 **9.** Once the deployment has finished you will see your newly created instance apearing in the list of **API Management services** (see step 2 if you forgot how to get there)
-![APIM Listing](.\assets\apimlisting.png) 
+![APIM Listing](./assets/apimlisting.png) 
 Click on the APIM instance name to open up the APIM Blade and overview.
 
 **10.** In the left menu, select **Deployment + infrastructure > Service** update settings.
-![Service updates](.\assets\Serviceupdate.png)
+![Service updates](./assets/Serviceupdate.png)
 
 **11.** Under Update group, review the current setting and select Edit to change it to *AI Gateway Early*.
  Click **"Save"** to enable.
-![alt text](.\assets\updategroup.png)
+![alt text](./assets/updategroup.png)
 
 > **🚨 HEADS UP**  
 > Now you need to wait up to 2 hours after enabling the update group, to get the MCP side of things working correctly. Hence why we do this as pre-req to not hold you back from the other exercises.

@@ -8,37 +8,37 @@ APIM makes it really easy to add API's and MCP's. Since we are going to do both 
 
 **1.** First login to the portal, but this time using the preview portal for APIM MCP url :  https://portal.azure.com/?Microsoft_Azure_ApiManagement=mcp
 it's the *"?Microsoft_Azure_ApiManagement=mcp"* parameter which will make the MCP part visible in the APIM blade.
-![APIM adding API](.\assets\apim-apiadd.png)
+![APIM adding API](./assets/apim-apiadd.png)
 
 **2.** For the fun of it we will add an OpenAPI 3x spec as an API, for this we will use the Petstore API : https://petstore3.swagger.io/api/v3
 so for that choose OpenAPI
 
-![OpenAPI](.\assets\openapi.png)
+![OpenAPI](./assets/openapi.png)
 
 **3.** A wizard will appear (not Harry or Gandalf 😉) , fill it out with the following JSON schema https://petstore3.swagger.io/api/v3/openapi.json and make sure you have the *API URL suffix* as "petstore". 
-![Add OpenAPI Wizard](.\assets\wizardopenapi.png)
+![Add OpenAPI Wizard](./assets/wizardopenapi.png)
 Click **"Create"** to continue.
 The API will now be in the list:
 
-![alt text](.\assets\apilist.png)
+![alt text](./assets/apilist.png)
 
 ### Add the REST API as MCP
 We now can consume the API's from withing the APIM and add them to the MCP Server registry
 **1.** In the API Management service blade (the side panel with tools and config options) of your APIM gateway select the MCP Servers item:
 
-![MCP Servers](.\assets\mcpservers.png)
+![MCP Servers](./assets/mcpservers.png)
 
 **2.** Click the **"Create new MCP Server"**-button on top of the page. This will open up a wizard to create an MCP Server based upon your onboarded API's.
-![Create new MCP Server](.\assets\mcpcreate.png)
+![Create new MCP Server](./assets/mcpcreate.png)
 
 **3.** The wizards makes it easy for you, as you get to choose the API's which are already in APIm, and thanks to the OpenAPI specs it will expose all the methods and API Operations you have at your disposal per API.
 For testing and exercise pick the Petstore API created earlier, and pick any of the API Operations you like.
-![mcpwizard](.\assets\mcpwizard.png)
+![mcpwizard](./assets/mcpwizard.png)
 
 Click **Create** and wait until the operation finishes.
 
 **4.** You will be thrown back tot the main MCP servers page and it will now state the added MCP Server including it's SSE endpoint:
-![MCP List](.\assets\mcplist.png)
+![MCP List](./assets/mcplist.png)
 Copy the SSE endpoint URL already in your clipboard.
 
 You have now created an MCP server and can start consuming it through any MCP capable client.
@@ -74,14 +74,14 @@ The easiest way of testing and validating an MCP Server is through MCP Inspector
     npx @modelcontextprotocol/inspector
 ```
 The server will start up and the UI will be accessible at `http://localhost:6274`.
-![alt text](.\assets\terminal.png)
+![alt text](./assets/terminal.png)
 **3.** Open the above localhost address in a browser.
 **4.** Copy the SSE endpoint URL from the MCP Server blade in APIM if you don't have it in your clipboard anymore.
 **5.** In the MCP Inspector WebUI paste the URL in the URL box and then press the **"Connect"** button.
-![MCP Inspector WebUI](.\assets\inspector.png)
+![MCP Inspector WebUI](./assets/inspector.png)
 **6.** Once connected you can now check out the available tools through the MCP Server:
-![Connection to MCP Server](.\assets\mcpconnected.png)
+![Connection to MCP Server](./assets/mcpconnected.png)
 Click on the "List tools" button to load them
-![alt text](.\assets\mcptools.png) 
+![alt text](./assets/mcptools.png) 
 **7.** You can even check all calls to the tools and see the cost of the calls in the "History" panel:
-![MCP calls](.\assets\mcpcallhistory.png)
+![MCP calls](./assets/mcpcallhistory.png)
