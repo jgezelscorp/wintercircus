@@ -247,8 +247,8 @@ az account set --subscription <subscription name>
 ```
 
 ### 3.2 Identify GPU needed for NIM
-
-- Go to NIM document to find the GPU you [need](https://docs.nvidia.com/nim/large-language-models/latest/support-matrix.html) and convert to Azure VM
+- We will be using the ***Standard_NC24ads_A100_V4*** sever series
+- for reference, on the NIM documentation site, you can find  find the GPU you [need](https://docs.nvidia.com/nim/large-language-models/latest/support-matrix.html) and convert to Azure VM
 
 Following is the example
 
