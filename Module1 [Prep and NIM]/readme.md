@@ -1,3 +1,18 @@
+# Index
+
+- [Part 1: Azure AI Foundry](#part-1-azure-ai-foundry)
+  - [Log-in](#log-in)
+  - [1. Create the Azure AI Foundry Project](#1-create-the-azure-ai-foundry-project)
+  - [2. Configure the Azure AI Foundry Project](#2-configure-the-azure-ai-foundry-project)
+- [Part 2: Nvidia NIM](#part-2-nvidia-nim)
+  - [Introduction](#introduction)
+  - [Deploy NVidia NIM](#deploy-nvidia-nim)
+    - [Task 1: Generate NGC API KEY](#task-1-generate-ngc-api-key)
+    - [Task 2 (Powershell): Prepare Your Environment](#task-2-powershell-prepare-your-environment)
+    - [Task 3: Setup Azure Kubernetes Service (AKS)](#task-3-setup-azure-kubernetes-service-aks)
+    - [Task 4: Deploy NIM](#task-4-deploy-nim)
+    - [Task 5: Verify Your Deployment](#task-5-verify-your-deployment)
+
 # Part 1: Azure AI Foundry
 
 In this step, we'll setup AI Foundry where we will deploy and configure our models. As far as LLMs go, we're going to do something special.
@@ -143,6 +158,10 @@ Next, click on Generate API Key.
 ### Install AKS Preview extension
 1. In the LabVM, in the Windows Search bar type Powershell (1) and select Windows PowerShell ISE (2). Right click on it, then Run as Administrator (3).
    ![img.png](../images/img.png)
+   ```
+   az extension add --name aks-preview
+   az extension update --name aks-preview
+   ```
 
 
 
@@ -215,54 +234,6 @@ Next, click on Generate API Key.
     ```
    ![img_4.png](../images/img_4.png)
 
-
-
-
-## Task 2 (Bash): Prepare Your Environment
-
-***Following is the detail instructions to install from a bash***
-
-### 2.1 Install AKS Preview extension
-
-```
-az extension add --name aks-preview
-az extension update --name aks-preview
-```
-
-For more detail, Please reference this [link.](https://learn.microsoft.com/en-us/azure/aks/draft)
-
-### 2.2 Install kubectl
-
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-```
-
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-```
-```
-echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
-```
-
-```
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-```
-
-```
-kubectl version --client
-```
-
-### 2.3 Install helm
-
-```
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
-```
-```
-chmod 700 get_helm.sh
-```
-```
-./get_helm.sh
-```
 
 ## Task 3: Setup Azure Kubernetes Service (AKS)
 
