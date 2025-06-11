@@ -1,11 +1,11 @@
-# Module 2: Semantic Kernel Workshop
+# Module 2: Semantic Kernel Lab
 
 A hands-on workshop exploring Microsoft's Semantic Kernel framework for building intelligent AI applications. This workshop provides practical experience with real-world AI application patterns using Python and Azure OpenAI.
 
 The original location of the workshop can be found [here](https://github.com/Azure-Samples/semantic-kernel-workshop/tree/main
 )
 
-## Workshop Overview
+## Lab Overview
 
 This workshop takes you from foundational concepts to advanced implementation patterns through a series of Jupyter notebooks and practical examples. You'll learn how to:
 
@@ -29,7 +29,7 @@ This workshop takes you from foundational concepts to advanced implementation pa
    - Begin with `01-intro-to-semantic-kernel/01-intro.ipynb`, which includes instructions for installing Semantic Kernel and other required packages.
 
 
-## Workshop Modules
+## Lab Modules
 
 ### 01. Introduction to Semantic Kernel
 
@@ -120,7 +120,3 @@ For advanced patterns and enterprise deployment scenarios, explore the [Semantic
 - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 - [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service/)
 - [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
