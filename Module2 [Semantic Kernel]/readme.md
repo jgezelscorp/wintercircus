@@ -1,13 +1,13 @@
 # Module 2: Semantic Kernel Lab
 
-A hands-on workshop exploring Microsoft's Semantic Kernel framework for building intelligent AI applications. This workshop provides practical experience with real-world AI application patterns using Python and Azure OpenAI.
+A hands-on Lab exploring Microsoft's Semantic Kernel framework for building intelligent AI applications. This workshop provides practical experience with real-world AI application patterns using Python and Azure OpenAI.
 
 The original location of the workshop can be found [here](https://github.com/Azure-Samples/semantic-kernel-workshop/tree/main
 )
 
 ## Lab Overview
 
-This workshop takes you from foundational concepts to advanced implementation patterns through a series of Jupyter notebooks and practical examples. You'll learn how to:
+This lab takes you from foundational concepts to advanced implementation patterns through a series of Jupyter notebooks and practical examples. You'll learn how to:
 
 - Build AI applications using Microsoft's Semantic Kernel framework
 - Create and orchestrate AI agents with different capabilities and roles

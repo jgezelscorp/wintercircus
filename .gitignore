@@ -28,6 +28,7 @@ __pycache__/
 env/
 venv/
 ENV/
+uv.lock
 
 # IDEs
 .vscode/
