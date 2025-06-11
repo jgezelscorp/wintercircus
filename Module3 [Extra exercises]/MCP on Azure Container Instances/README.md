@@ -113,12 +113,16 @@ It uses the Dockerfile in the repo to build the container image and deploy it to
 
 After the deployment is complete, the Azure CLI returns the URL of the app.
 
+### Update CORS settings on the ACI instance
+
+* Don't do this in production but for a quick test, we should be fine
+* This is especially for the weather app later on that connects from another domain
+
+![](./../../images/1_Cors_Ani.gif)
+
 If the deployment would fail, try to update the extension first
 
-If the deployment fails, try again after updating the CLI and the Azure Container Apps extension:
-
 ```bash
-az upgrade
 az extension add -n containerapp --upgrade
 ```
 
