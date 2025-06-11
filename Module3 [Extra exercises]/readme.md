@@ -2,11 +2,12 @@
 
 This guide will help you set up all the necessary environment variables for the three projects in this repository.
 
-## 📁 Projects Overview
+## 📁 Excercises Overview
 
 1. **ACI_MCP** - Azure Container Apps MCP server for weather data
 2. **SK-Agent** - Semantic Kernel agent that uses Azure OpenAI and the above MCP server
-3. **weather-react-app** - React web application with Azure AD auth and weather features  
+3. **MCP through APIM*** - Protecting your MCP servers behind an APIM instance
+3. **weather-react-app** - React web application with Azure AD auth which also connects to the weather MCP server  
 
 
 ## 🚀 Quick Setup
