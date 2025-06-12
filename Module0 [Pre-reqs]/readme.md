@@ -11,7 +11,7 @@ If it is not the case, follow the steps below to install the necessary tools and
     ```
    If `winget` is not installed. Download VS Code manually and install it https://code.visualstudio.com/download
 
-2. Install the Azure Clin if not installed yet.
+2. Install the Azure CLI if not installed yet.
     ```
     Download via following link https://aka.ms/installazurecliwindowsx64
     ```

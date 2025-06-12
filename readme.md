@@ -49,7 +49,7 @@ The hack is build around 3 modules:
    <span style="color: green;">✓</span> Semantic Kernel Process-Framework
    <br>
    <br>
-3. [Module3 : Optional Excercises](./Module3%20[Extra%20exercises]/readme.md)
+3. [Module3 : Optional Exercises](./Module3%20[Extra%20exercises]/readme.md)
    <br>
    <span style="color: green;">✓</span> Deploy an MCP Server in an Azure Container Instance
    <br>
