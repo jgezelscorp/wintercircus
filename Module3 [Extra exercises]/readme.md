@@ -1,8 +1,4 @@
-# 🔧 Environment Setup Guide
-
-This guide will help you set up all the necessary environment variables for the three projects in this repository.
-
-## 📁 Excercises Overview
+# 📁 Excercises Overview
 
 1. **MCP_on_Azure_Container_Apps** - Azure Container Apps MCP server for weather data
 2. **SK-Agent** - Semantic Kernel agent that uses Azure OpenAI and the above MCP server
