@@ -330,7 +330,7 @@ NThncmgwMGEzY2YydXVrdHYzaXFpZjd1Mmg6Mzc2ZDMyMTUtNTVhYi00YzQ4LWFkOTctOTQyYjQ0NmIw
 Clone this repository and change directories into `nim-deploy/helm`. The following commands must be run from that directory.
 
 ```
-git clone git@github.com:NVIDIA/nim-deploy.git
+git clone https://github.com/CloudLabsAI-Azure/nim-deploy.git
 cd nim-deploy/helm
 ```
 
