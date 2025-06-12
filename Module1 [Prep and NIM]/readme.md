@@ -324,7 +324,7 @@ export NGC_API_KEY="key from ngc"
 or Powershell
 
 ```bash
-$env:NGC_API_KEY = "key from ngc"
+$NGC_API_KEY = "key from ngc"
 ```
 
 In case the key doesn't work, you could try the following key otherwise ask the coaches:
